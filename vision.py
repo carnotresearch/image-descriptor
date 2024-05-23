@@ -10,6 +10,8 @@ genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 model = genai.GenerativeModel("gemini-pro-vision")
 
+
+# trial comment
 def get_gemini_response(input,image):
     if input != "":
         response = model.generate_content([input, image])
